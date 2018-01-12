@@ -1,0 +1,9 @@
+.container {
+  height: 200px;
+  width: calc(100vw - 200px);
+  background: red;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
