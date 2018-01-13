@@ -1,9 +1,48 @@
 .container {
-  height: 200px;
-  width: calc(100vw - 200px);
-  background: red;
+  width: calc(100vw - 300px);
+  padding: 25px 50px;
+  position: relative;
+  left: 200px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#menu:hover {
-  cursor: pointer;
+#menu {
+  margin-right: 20px;
+}
+
+#image {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: green;
+}
+
+#imageContainer {
+  display: flex;
+}
+
+.left {
+  /* align-self: flex-start; */
+}
+
+.addProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  background: #3089fe;
+  border-radius: 70px;
+  padding: 10px 0px;
+  margin-right: 20px;
+  width: 140px;
+}
+
+.right {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

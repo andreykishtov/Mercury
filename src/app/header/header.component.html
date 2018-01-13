@@ -1,6 +1,29 @@
 <div class="container">
-  <p>header</p>
-  <a (click)="openMenu()" id="menu">
-    <i class="material-icons">menu</i>
-  </a>
+
+  <div class="left">
+    <a (click)="openMenu()" id="menu">
+      <i class="material-icons">chevron_left</i>
+      <i class="material-icons">menu</i>
+    </a>
+    <a>
+      <i class="material-icons">search</i>
+    </a>
+  </div>
+
+  <div class="right">
+    <a class="addProject">
+      <i class="material-icons">add</i>
+      <span>Add Project</span>
+    </a>
+    <a>
+      <i class="material-icons">mail_outline</i>
+    </a>
+    <a>
+      <i class="material-icons">add_alert</i>
+    </a>
+    <a id="imageContainer">
+      <div id="image"></div>
+      <i class="material-icons">arrow_drop_down</i>
+    </a>
+  </div>
 </div>
