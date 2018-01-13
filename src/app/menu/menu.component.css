@@ -1,17 +1,7 @@
-.moved {
-  transform: translate(-200px);
-}
-
-#offcanvas {
-  position: fixed;
-  width: 200px;
-  left: 0px;
-  top: 0;
-  bottom: 0px;
+/* #offcanvas {
   transition: 300ms ease all;
-  background: #0e2138;
-  color: white;
-}
+
+} */
 
 h2 {
   display: flex;
@@ -64,4 +54,8 @@ ul {
 i {
   padding: 10px;
   color: #2986f8;
+}
+
+.moved {
+  transform: translate(-200px);
 }
