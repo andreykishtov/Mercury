@@ -1,0 +1,51 @@
+.container {
+  margin: 0 20px 20px 0;
+  width: 450px;
+  border: 1px solid #e8ebf0;
+  background: white;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h5 {
+  margin-right: 10px;
+}
+
+.message {
+  border: 1px solid #f5f6f8;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.material-icons {
+  color: #7d92ad;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.image {
+  font-size: 15px;
+  color: white;
+  background: #2a89fe;
+  padding: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header .image {
+  padding: 5px 10px;
+}
+
+.content {
+  margin-bottom: 5px;
+}
+
+.message-icons {
+  margin-top: 5px;
+}
