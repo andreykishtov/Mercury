@@ -13,7 +13,7 @@ import { LayoutComponent } from './layout/layout.component';
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule
