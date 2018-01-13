@@ -18,13 +18,6 @@
   display: flex;
 }
 
-.info {
-  margin: 0 20px 20px 0;
-  width: 250px;
-  height: 300px;
-  background: white;
-}
-
 h2 {
   font-size: 2rem;
   margin: 0 20px 20px 0;

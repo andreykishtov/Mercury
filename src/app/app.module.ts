@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ActivityComponent } from './activity/activity.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { MessagesComponent } from './messages/messages.component';
     LayoutComponent,
     TasksComponent,
     MessagesComponent,
+    ActivityComponent,
   ],
   imports: [
     BrowserModule

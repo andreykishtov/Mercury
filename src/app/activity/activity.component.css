@@ -11,18 +11,19 @@
   padding: 10px 20px;
 }
 
-.task {
+h5 {
+  margin-right: 10px;
+}
+
+.activity {
   border: 1px solid #f5f6f8;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;
 }
 
-.time {
-  align-items: center;
-}
-
-.time .material-icons {
+.material-icons {
+  color: #7d92ad;
   font-size: 14px;
   margin-right: 5px;
 }
@@ -41,14 +42,10 @@
   padding: 5px 10px;
 }
 
-.red {
-  background: #ff207d;
+.content {
+  margin-bottom: 5px;
 }
 
-.delay {
-  color: #ff659f;
-}
-
-.dots {
-  color: #7d92ad;
+.message-icons {
+  margin-top: 5px;
 }
