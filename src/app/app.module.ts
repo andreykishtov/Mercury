@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutComponent } from './layout/layout.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
     HeaderComponent,
     MenuComponent,
     LayoutComponent,
+    TasksComponent,
   ],
   imports: [
     BrowserModule

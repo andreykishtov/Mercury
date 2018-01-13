@@ -1,0 +1,18 @@
+<div class="flex">
+
+  <div>
+    <h1>Tasks</h1>
+    <div class="Image">5</div>
+    <div class="Image">2</div>
+  </div>
+
+  <div *ngFor="let task of tasks">
+    <div class="image">{{ task.letter }}</div>
+    <div class="content">
+      <p>{{task.description}}</p>
+      <p>{{task.days}}</p>
+    </div>
+    <i class="material-icons">more_vert</i>
+  </div>
+
+</div>
