@@ -1,18 +1,23 @@
-<div class="flex">
+<div class="container flex">
 
-  <div>
-    <h1>Tasks</h1>
-    <div class="Image">5</div>
-    <div class="Image">2</div>
+  <div class="flex isRow header">
+    <h3>Tasks</h3>
+    <div class="flex isRow">
+      <div class="image">5</div>
+      <div class="image red">2</div>
+    </div>
   </div>
 
-  <div *ngFor="let task of tasks">
-    <div class="image">{{ task.letter }}</div>
-    <div class="content">
-      <p>{{task.description}}</p>
-      <p>{{task.days}}</p>
+  <div class="flex isRow task" *ngFor="let task of tasks">
+    <div class="flex isRow">
+      <div class="image">{{task.letter}}</div>
+      <div class="content">
+        <p>{{task.description}}</p>
+        <p class="flex isRow time {{task.delay}}">
+          <i class="material-icons">access_time</i>{{task.days}}</p>
+      </div>
     </div>
-    <i class="material-icons">more_vert</i>
+    <i class="material-icons dots">more_vert</i>
   </div>
 
 </div>
