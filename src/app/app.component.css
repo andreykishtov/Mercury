@@ -8,11 +8,13 @@
 }
 
 .header {
-  padding: 25px;
+  height: 100px;
+  padding: 0 25px;
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-grow: 0;
+  border: 1px solid #d4dae4;
 }
 
 .layout {

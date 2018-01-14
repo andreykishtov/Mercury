@@ -5,7 +5,7 @@
     <div class="image">2</div>
   </div>
 
-  <div class="flex isRow message" *ngFor="let message of messages">
+  <div class="flex isRow message {{message.unread}}" *ngFor="let message of messages">
     <div class="image"></div>
     <div>
       <div class="flex isRow content">

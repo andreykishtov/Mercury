@@ -6,6 +6,7 @@
 }
 
 .header {
+  height: 70px;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -16,7 +17,7 @@ h5 {
 }
 
 .activity {
-  border: 1px solid #f5f6f8;
+  height: 90px;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;
@@ -45,6 +46,15 @@ h5 {
 .content {
   margin-bottom: 5px;
 }
+/* ::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #232b50;
+  position: relative;
+  top: 0;
+  left: -4.35em;
+} */
 
 .message-icons {
   margin-top: 5px;
