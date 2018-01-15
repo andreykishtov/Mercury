@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +7,12 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public OnRetailerUpdated = new EventEmitter< boolean >();
-
   constructor() { }
 
+  @Input()  showMenu: boolean;
+
   openMenu(): void {
-    this.OnRetailerUpdated.next(true);
+    // this.OnRetailerUpdated.next(true);
     // window.onload = () => {
     //   document.querySelector('#menu').onclick = () => {
     //     document.querySelector('#main').classList.toggle("moved");
