@@ -12,6 +12,7 @@
 
 .infoContainer {
   display: flex;
+  justify-content: space-between;
 }
 
 .chartContainer {

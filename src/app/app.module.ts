@@ -19,7 +19,7 @@ import { ActivityComponent } from './activity/activity.component';
     LayoutComponent,
     TasksComponent,
     MessagesComponent,
-    ActivityComponent,
+    ActivityComponent
   ],
   imports: [
     BrowserModule
