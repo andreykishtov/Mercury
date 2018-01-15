@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,15 @@ import { Component, Output } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
+
 export class AppComponent {
-  @Output() showMenu = false;
+
+  menuState = true;
+  cssClassName: string;
   title = 'app';
+
+  onMenuClick(data): void {
+    this.menuState = !this.menuState;
+    this.cssClassName = this.menuState ? '' : 'moved';
+  }
 }

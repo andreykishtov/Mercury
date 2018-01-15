@@ -22,3 +22,8 @@
   background: #f5f7fa;
   flex-grow: 1;
 }
+
+.moved {
+  position: fixed;
+  transform: translate(-200px);
+}

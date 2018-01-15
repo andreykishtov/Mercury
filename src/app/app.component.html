@@ -1,10 +1,8 @@
 <div class="flex isRow minHeight">
-
-  <app-menu [showMenu]="showMenu" class="menu"></app-menu>
+  <app-menu class="menu {{cssClassName}}"></app-menu>
 
   <div class="flex flexOne">
-
-    <app-header [showMenu]="showMenu" class="header"></app-header>
+    <app-header class="header" (ClickMenu)="onMenuClick($event)"></app-header>
     <app-layout class="layout"></app-layout>
 
   </div>
