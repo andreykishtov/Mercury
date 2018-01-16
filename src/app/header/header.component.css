@@ -54,11 +54,11 @@ a {
 }
 
 .alertCounter {
-  top: 25px;
-  right: 137px;
+  position: relative;
+  top: -7px;
+  right: 14px;
   color: white;
   font-size: 10px;
-  position: absolute;
   width: 15px;
   height: 15px;
   background: #4091fe;

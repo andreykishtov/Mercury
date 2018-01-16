@@ -1,6 +1,12 @@
+#offcanvas {
+  width: 300px;
+  font-size: 23px;
+}
+
 .menu-header {
   height: 79px;
 }
+
 h2 {
   display: flex;
   padding: 20px;
@@ -36,6 +42,7 @@ li {
 }
 
 li:hover {
+  cursor: pointer;
   background: #0f2845;
   padding-left: 10px;
   border-left: 10px solid #3089fe;

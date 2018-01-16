@@ -1,7 +1,8 @@
 .container {
   width: 450px;
-  border: 1px solid #e8ebf0;
+  border: 1px solid #d2d9e3;
   background: white;
+  margin-right: 25px;
 }
 
 .header {
@@ -17,7 +18,7 @@ h5 {
 
 .message {
   height: 90px;
-  border: 1px solid #f5f6f8;
+  border: 1px solid #e3e7ed;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 20px;

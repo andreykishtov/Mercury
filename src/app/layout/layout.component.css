@@ -18,15 +18,27 @@ a {
 
 .infoContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .chartContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 h2 {
   font-size: 2rem;
   margin: 0 20px 20px 0;
+}
+
+@media (max-width: 1770px) {
+  .infoContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1400px) {
+  .chartContainer {
+    flex-direction: column;
+  }
 }

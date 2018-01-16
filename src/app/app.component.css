@@ -1,4 +1,5 @@
 .menu {
+  transition: all 1s linear;
   background: #0e2138;
   color: white;
 }
@@ -12,17 +13,16 @@
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
-  flex-grow: 0;
   border: 1px solid #d4dae4;
 }
 
 .layout {
   padding: 25px;
   background: #f5f7fa;
-  flex-grow: 1;
 }
 
 .moved {
-  position: fixed;
-  transform: translate(-200px);
+  margin-left: -300px;
+  top: 0;
+  bottom: 0;
 }
