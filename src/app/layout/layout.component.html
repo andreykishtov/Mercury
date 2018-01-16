@@ -1,7 +1,11 @@
 <h2>Hello John!</h2>
 <div class="chartContainer">
-  <div class="chart"></div>
-  <div class="chart chart-big"></div>
+  <a [href]="leftImage">
+    <img class="leftImage" [src]="leftImage" alt="chart">
+  </a>
+  <a [href]="rightImage">
+    <img class="rightImage" [src]="rightImage" alt="chart">
+  </a>
 </div>
 <div class="infoContainer">
   <app-tasks></app-tasks>

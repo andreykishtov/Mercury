@@ -1,22 +1,29 @@
-.chart {
-  margin: 0 20px 20px 0;
-  width: 200px;
-  height: 300px;
-  background: white;
-  border: 1px solid #e8ebf0;
+img {
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
-.chart-big {
-  width: 400px;
+.rightImage {
+  height: 340px;
+  width: auto;
+}
+.leftImage {
+  height: 340px;
+  width: auto;
+}
+
+a {
+  border: none;
 }
 
 .infoContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .chartContainer {
   display: flex;
+  justify-content: space-evenly;
 }
 
 h2 {

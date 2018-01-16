@@ -15,10 +15,14 @@
 }
 
 a {
+  height: 40px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
 .left {
+  display: flex;
   align-self: center;
 }
 
@@ -39,4 +43,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.arrow {
+  transform: rotate(270deg);
+  color: #3089fe;
 }
