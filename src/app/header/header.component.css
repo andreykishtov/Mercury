@@ -4,14 +4,17 @@
 
 #image {
   margin-left: 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 15px;
-  background: green;
 }
 
 #imageContainer {
   display: flex;
+}
+
+.right a {
+  margin-right: 20px;
 }
 
 a {
@@ -35,7 +38,7 @@ a {
   background: #3089fe;
   border-radius: 70px;
   padding: 10px 0px;
-  margin-right: 20px;
+  margin-right: 50px;
   width: 140px;
 }
 
@@ -48,4 +51,19 @@ a {
 .arrow {
   transform: rotate(270deg);
   color: #3089fe;
+}
+
+.alertCounter {
+  top: 25px;
+  right: 137px;
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #4091fe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

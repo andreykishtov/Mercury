@@ -2,11 +2,13 @@
 
   <div class="flex isRow header">
     <h3>Activity</h3>
-    <div class="image">10</div>
+    <div class="activemessages">
+      <span>10</span>
+    </div>
   </div>
 
   <div class="flex isRow activity" *ngFor="let activity of activitys">
-    <div class="image"></div>
+    <img class="image" [src]="activity.imageUrl" alt="">
     <div>
       <div class="flex isRow content">
         <h5>{{activity.fromWho}}</h5>

@@ -29,13 +29,29 @@
   margin-right: 5px;
 }
 
-.image {
-  font-size: 15px;
+.messages {
+  font-weight: bold;
   color: white;
   background: #2a89fe;
-  padding: 10px;
-  vertical-align: middle;
-  border-radius: 50%;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.taskLetter {
+  font-weight: bold;
+  color: white;
+  background: #2a89fe;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
 }
 

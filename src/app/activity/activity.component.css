@@ -29,13 +29,11 @@ h5 {
 }
 
 .image {
-  font-size: 15px;
-  color: white;
-  background: #2a89fe;
-  padding: 10px;
-  vertical-align: middle;
-  border-radius: 50%;
+  width: 50px;
   margin-right: 10px;
+  height: auto;
+  background: #2a89fe;
+  border-radius: 50%;
 }
 
 .header .image {
@@ -45,16 +43,19 @@ h5 {
 .content {
   margin-bottom: 5px;
 }
-/* ::before {
-  content: '';
-  width: 0;
-  height: 100%;
-  border-left: 1px solid #232b50;
-  position: relative;
-  top: 0;
-  left: -4.35em;
-} */
 
 .message-icons {
   margin-top: 5px;
+}
+
+.activemessages {
+  font-weight: bold;
+  color: white;
+  background: #2a89fe;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

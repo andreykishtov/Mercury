@@ -30,13 +30,11 @@ h5 {
 }
 
 .image {
-  font-size: 15px;
-  color: white;
-  background: #2a89fe;
-  padding: 10px;
-  vertical-align: middle;
-  border-radius: 50%;
+  width: 50px;
   margin-right: 10px;
+  height: auto;
+  background: #2a89fe;
+  border-radius: 50%;
 }
 
 .header .image {
@@ -57,4 +55,16 @@ h5 {
 
 .unread {
   background: #f3f5f8;
+}
+
+.unreadcount {
+  font-weight: bold;
+  color: white;
+  background: #2a89fe;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

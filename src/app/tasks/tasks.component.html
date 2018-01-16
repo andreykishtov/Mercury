@@ -3,14 +3,20 @@
   <div class="flex isRow header">
     <h3>Tasks</h3>
     <div class="flex isRow">
-      <div class="image">5</div>
-      <div class="image red">2</div>
+      <div class="messages">
+        <span>5</span>
+      </div>
+      <div class="messages red">
+        <span>2</span>
+      </div>
     </div>
   </div>
 
   <div class="flex isRow task" *ngFor="let task of tasks">
     <div class="flex isRow">
-      <div class="image">{{task.letter}}</div>
+      <div class="taskLetter">
+        <span>{{task.letter}}</span>
+      </div>
       <div class="content">
         <p>{{task.description}}</p>
         <p class="flex isRow time {{task.delay}}">
