@@ -9,6 +9,7 @@ img {
 }
 
 .leftImage {
+  margin-right: 25px;
   height: 35vh;
   width: 30vw;
 }
@@ -33,13 +34,20 @@ h2 {
 }
 
 @media (max-width: 1350px) {
+  .rightImage {
+    height: auto;
+    width: 65vw;
+  }
+
+  .leftImage {
+    height: auto;
+    width: 65vw;
+  }
+
   .infoContainer {
     flex-direction: column;
   }
-}
-/*
-@media (max-width: 1000px) {
   .chartContainer {
     flex-direction: column;
   }
-} */
+}

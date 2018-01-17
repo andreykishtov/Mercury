@@ -9,9 +9,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  border-bottom: 1px solid #d2d9e3;
 }
 
 h5 {
+  cursor: pointer;
   margin-right: 10px;
 }
 
@@ -29,6 +31,7 @@ h5 {
 }
 
 .image {
+  cursor: pointer;
   width: 50px;
   margin-right: 10px;
   height: auto;
@@ -49,6 +52,7 @@ h5 {
 }
 
 .activemessages {
+  cursor: pointer;
   font-weight: bold;
   color: white;
   background: #2a89fe;
@@ -66,19 +70,11 @@ h5 {
   }
 }
 
-.timeline > li {
-  overflow: hidden;
-  margin: 0;
-  position: relative;
+.action {
+  color: #7d92ad;
+  margin-right: 5px;
 }
-.timeline-date {
-  width: 110px;
-  float: left;
-  margin-top: 20px;
-}
-.timeline-content {
-  width: 75%;
-  float: left;
-  border-left: 3px #e5e5d1 solid;
-  padding-left: 30px;
+
+.time {
+  color: #7d92ad;
 }
