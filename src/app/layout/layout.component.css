@@ -4,12 +4,13 @@ img {
 }
 
 .rightImage {
-  height: 340px;
-  width: auto;
+  height: 35vh;
+  width: 45vw;
 }
+
 .leftImage {
-  height: 340px;
-  width: auto;
+  height: 35vh;
+  width: 30vw;
 }
 
 a {
@@ -31,14 +32,14 @@ h2 {
   margin: 0 20px 20px 0;
 }
 
-@media (max-width: 1770px) {
+@media (max-width: 1350px) {
   .infoContainer {
     flex-direction: column;
   }
 }
-
-@media (max-width: 1400px) {
+/*
+@media (max-width: 1000px) {
   .chartContainer {
     flex-direction: column;
   }
-}
+} */
