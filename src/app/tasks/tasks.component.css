@@ -1,5 +1,5 @@
 .container {
-  width: 24vw;
+  min-width: 24vw;
   min-height: 400px;
   border: 1px solid #d2d9e3;
   background: white;
@@ -78,6 +78,6 @@
 
 @media (max-width: 1350px) {
   .container {
-    width: 50vw;
+    min-width: 40vw;
   }
 }

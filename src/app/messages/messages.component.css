@@ -1,5 +1,5 @@
 .container {
-  width: 24vw;
+  min-width: 24vw;
   border: 1px solid #d2d9e3;
   background: white;
   margin: 0 25px 25px 0;
@@ -76,6 +76,6 @@ h5 {
 
 @media (max-width: 1350px) {
   .container {
-    width: 50vw;
+    min-width: 50vw;
   }
 }
