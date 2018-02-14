@@ -20,10 +20,10 @@ const Logo = styled.div`
 
 const InsideLogo = styled.div`
   position: relative;
-  top: 1.5vh;
-  left: 0.75vw;
-  width: 1.5vw;
-  height: 3vh;
+  top: 12.5px;
+  left: 12.5px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background: #0f2038;
 `;
@@ -48,6 +48,7 @@ const Button = styled.a`
 `;
 
 const Container = styled.div`
+  cursor: pointer;
   display: flex;
   align-items: center;
 `;

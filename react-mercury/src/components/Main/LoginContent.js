@@ -22,7 +22,7 @@ const Status = styled.span`
 
 const Submit = styled.button`
   color: white;
-  width: 20vw;
+  width: 15vw;
   height: 5vh;
   border: none;
   border-radius: 2.5vh;

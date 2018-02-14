@@ -11,6 +11,7 @@ const Inp = styled.input`
   border-bottom: 1px solid #e5e6ea;
   padding-left: 2vw;
   font-size: 1.5rem;
+  transition-duration: 1s;
   :focus {
     border-bottom: 1px solid red;
     outline: none;
@@ -18,6 +19,7 @@ const Inp = styled.input`
 `;
 
 const Icon = styled.i`
+  color: #6389d5;
   position: relative;
   left: 1.5vw;
 `;

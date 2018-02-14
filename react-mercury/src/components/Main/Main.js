@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 `;
 
 const LoginWindow = styled.div`
-  height: 50vh;
+  height: 65vh;
   width: 50vw;
   background: white;
 `;
