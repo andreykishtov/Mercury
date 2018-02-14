@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import image from '../../images/nature.jpeg';
 import Header from './Header';
+import LoginContent from './LoginContent';
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,14 +19,12 @@ const LoginWindow = styled.div`
   background: white;
 `;
 
-const LoginContent = styled.div``;
-
 const Main = () => {
   return (
     <Wrapper>
       <LoginWindow>
         <Header />
-        <LoginContent>1</LoginContent>
+        <LoginContent />
       </LoginWindow>
     </Wrapper>
   );

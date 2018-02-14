@@ -12,8 +12,8 @@ const Wrapper = styled.div`
 
 const Logo = styled.div`
   margin-left: 2vw;
-  width: 3vw;
-  height: 6vh;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: radial-gradient(circle, red, #2793f2, lightblue);
 `;
