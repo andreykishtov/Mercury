@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from '../Logo';
 
 const Wrapper = styled.div`
   color: white;
@@ -8,29 +9,6 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-const Logo = styled.div`
-  margin-left: 2vw;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: radial-gradient(circle, red, #2793f2, lightblue);
-`;
-
-const InsideLogo = styled.div`
-  position: relative;
-  top: 12.5px;
-  left: 12.5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #0f2038;
-`;
-
-const Title = styled.div`
-  margin-left: 10px;
-  font-size: 2rem;
 `;
 
 const Button = styled.a`
@@ -56,12 +34,7 @@ const Container = styled.div`
 const Header = () => {
   return (
     <Wrapper>
-      <Container>
-        <Logo>
-          <InsideLogo />
-        </Logo>
-        <Title>Mercury</Title>
-      </Container>
+      <Logo />
       <Container>
         <Button>Register</Button>
         <Button>Login</Button>
