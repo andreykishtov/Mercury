@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   height: 100vh;
   color: white;
   background: #0f2038;
-  padding-top: 5vh;
+  padding: 2.5vh 0;
 `;
 
 const Li = styled.li`

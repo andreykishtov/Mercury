@@ -42,25 +42,37 @@ const I = styled.i`
   padding-right: 10px;
 `;
 
+const Icon = styled.i`
+  margin-right: 10px;
+`;
+
+const Image = styled.img`
+  margin-right: 5px;
+`;
+
 const Header = () => {
   return (
     <Wrapper>
       <Left>
         <MenuActivator>
-          <i className="fas fa-chevron-left" />
-          <i className="fas fa-bars" />
+          <Icon className="fas fa-chevron-left" />
+          <Icon className="fas fa-bars" />
         </MenuActivator>
-        <i className="fas fa-search" />
+        <Icon className="fas fa-search" />
       </Left>
 
       <Right>
         <AddProject>
           <I className="fas fa-plus" />Add project
         </AddProject>
-        <i className="fas fa-envelope" />
-        <i className="fas fa-bell" />
-        <img src="" alt="image" />
-        <i className="fas fa-sort-down" />
+        <div>
+          <Icon className="fas fa-envelope" />
+          <Icon className="fas fa-bell" />
+        </div>
+        <div>
+          <Image src="" alt="image" />
+          <Icon className="fas fa-sort-down" />
+        </div>
       </Right>
     </Wrapper>
   );
