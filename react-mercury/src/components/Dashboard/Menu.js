@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import Logo from '../Logo';
 
 const Wrapper = styled.div`
+  margin-left: ${({ menu }) => (menu ? '0' : '-15vw')};
   width: 15vw;
   height: 100vh;
   color: white;
   background: #0f2038;
-  padding: 2.5vh 0;
 `;
 
 const Li = styled.li`
@@ -35,13 +35,13 @@ const menuItems = [
   { id: 5, icon: 'fas fa-cog', name: 'Settings' }
 ];
 
-const Menu = () => (
-  <Wrapper>
-    <Logo />
+const Menu = ({ menu, toggleMenu }) => (
+  <Wrapper menu={menu}>
+    <Logo onClick={toggleMenu} />
     <Ul>
       {menuItems.map(item => (
         <Li key={item.id}>
-          <i class={item.icon} /> {item.name}
+          <i className={item.icon} /> {item.name}
         </Li>
       ))}
     </Ul>

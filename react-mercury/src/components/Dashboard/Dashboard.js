@@ -9,12 +9,12 @@ const Wrapper = styled.div`
 `;
 const Content = styled.div``;
 
-const Dashboard = () => {
+const Dashboard = ({ toggleMenu, menu }) => {
   return (
     <Wrapper>
-      <Menu />
+      <Menu menu={menu} toggleMenu={toggleMenu} />
       <div>
-        <Header />
+        <Header toggleMenu={toggleMenu} />
         <Content />
       </div>
     </Wrapper>

@@ -19,7 +19,7 @@ const LoginWindow = styled.div`
   background: white;
 `;
 
-const Main = () => {
+const LoginPage = () => {
   return (
     <Wrapper>
       <LoginWindow>
@@ -30,4 +30,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default LoginPage;

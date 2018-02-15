@@ -5,6 +5,7 @@ const Container = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding: 2.5vh 0;
 `;
 
 const OutsideLogo = styled.div`

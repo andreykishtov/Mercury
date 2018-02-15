@@ -44,38 +44,37 @@ const I = styled.i`
 
 const Icon = styled.i`
   margin-right: 10px;
+  cursor: pointer;
 `;
 
 const Image = styled.img`
   margin-right: 5px;
 `;
 
-const Header = () => {
-  return (
-    <Wrapper>
-      <Left>
-        <MenuActivator>
-          <Icon className="fas fa-chevron-left" />
-          <Icon className="fas fa-bars" />
-        </MenuActivator>
-        <Icon className="fas fa-search" />
-      </Left>
+const Header = ({ toggleMenu }) => (
+  <Wrapper>
+    <Left>
+      <MenuActivator>
+        <Icon className="fas fa-chevron-left" />
+        <Icon onClick={toggleMenu} className="fas fa-bars" />
+      </MenuActivator>
+      <Icon className="fas fa-search" />
+    </Left>
 
-      <Right>
-        <AddProject>
-          <I className="fas fa-plus" />Add project
-        </AddProject>
-        <div>
-          <Icon className="fas fa-envelope" />
-          <Icon className="fas fa-bell" />
-        </div>
-        <div>
-          <Image src="" alt="image" />
-          <Icon className="fas fa-sort-down" />
-        </div>
-      </Right>
-    </Wrapper>
-  );
-};
+    <Right>
+      <AddProject>
+        <I className="fas fa-plus" />Add project
+      </AddProject>
+      <div>
+        <Icon className="fas fa-envelope" />
+        <Icon className="fas fa-bell" />
+      </div>
+      <div>
+        <Image src="" alt="image" />
+        <Icon className="fas fa-sort-down" />
+      </div>
+    </Right>
+  </Wrapper>
+);
 
 export default Header;
