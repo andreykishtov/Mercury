@@ -35,6 +35,14 @@ const menuItems = [
   { id: 5, icon: 'fas fa-cog', name: 'Settings' }
 ];
 
+{
+  /* <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/topics">Topics</Link></li>
+        </ul> */
+}
+
 const Menu = ({ menu, toggleMenu }) => (
   <Wrapper menu={menu}>
     <Logo onClick={toggleMenu} />

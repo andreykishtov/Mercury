@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 // import LoginPage from './LoginPage/LoginPage';
 import Dashboard from './Dashboard/Dashboard';
@@ -12,9 +13,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <Router className="App">
         <Dashboard menu={this.state.menu} toggleMenu={this.state.toggleMenu} />
-      </div>
+      </Router>
     );
   }
 }
