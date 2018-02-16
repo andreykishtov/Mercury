@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+
+import { toggleMenu } from '../../Store/actions/menu';
 
 const Wrapper = styled.div`
   height: calc(5vh + 50px);
@@ -7,7 +10,6 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(100vw - 15vw);
 `;
 
 const MenuActivator = styled.div`
@@ -43,6 +45,7 @@ const I = styled.i`
 `;
 
 const Icon = styled.i`
+  font-size: 1.5rem;
   margin-right: 10px;
   cursor: pointer;
 `;
@@ -54,7 +57,7 @@ const Image = styled.img`
 const Header = ({ toggleMenu }) => (
   <Wrapper>
     <Left>
-      <MenuActivator>
+      <MenuActivator onClick={toggleMenu}>
         <Icon className="fas fa-chevron-left" />
         <Icon onClick={toggleMenu} className="fas fa-bars" />
       </MenuActivator>
@@ -77,4 +80,10 @@ const Header = ({ toggleMenu }) => (
   </Wrapper>
 );
 
-export default Header;
+const mapDispatchToProps = dispatch => ({
+  toggleMenu: () => {
+    dispatch(toggleMenu());
+  }
+});
+
+export default connect(null, mapDispatchToProps)(Header);

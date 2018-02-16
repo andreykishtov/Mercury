@@ -1,4 +1,4 @@
-import { SHOW_MENU, HIDE_MENU } from '../constants/menu';
+import { TOGGLE_MENU } from '../constants/menu';
 
 const initialState = {
   menu: true
@@ -6,15 +6,10 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SHOW_MENU:
+    case TOGGLE_MENU:
       return {
         ...state,
-        menu: true
-      };
-    case HIDE_MENU:
-      return {
-        ...state,
-        menu: false
+        menu: !state.menu
       };
     default:
       return state;

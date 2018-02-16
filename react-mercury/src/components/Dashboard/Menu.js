@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+
 import Logo from '../Logo';
 import { Link } from 'react-router-dom';
+import { toggleMenu } from '../../Store/actions/menu';
 
 const Wrapper = styled.div`
+  transition: all 1s ease-out;
   margin-left: ${({ menu }) => (menu ? '0' : '-15vw')};
   width: 15vw;
   height: 100vh;
@@ -12,6 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const Li = styled.li`
+  font-size: 1.5rem;
   cursor: pointer;
   list-style-type: none;
   padding: 2em;
@@ -50,8 +55,10 @@ const menuItems = [
 ];
 
 const Menu = ({ menu, toggleMenu }) => (
-  <Wrapper menu={menu}>
-    <Logo onClick={toggleMenu} />
+  <Wrapper menu={menu.menu}>
+    <span onClick={toggleMenu}>
+      <Logo />
+    </span>
     <Ul>
       {menuItems.map(item => (
         <StyledLink key={item.id} to={item.path}>
@@ -65,4 +72,14 @@ const Menu = ({ menu, toggleMenu }) => (
   </Wrapper>
 );
 
-export default Menu;
+const mapDispatchToProps = dispatch => ({
+  toggleMenu: () => {
+    dispatch(toggleMenu());
+  }
+});
+
+const mapStateToProps = state => ({
+  menu: state.menu
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Menu);
