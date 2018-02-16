@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../Logo';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
   margin-left: ${({ menu }) => (menu ? '0' : '-15vw')};
@@ -21,36 +22,44 @@ const Li = styled.li`
   }
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
 const Ul = styled.ul`
   padding: 0px;
   margin: 0px;
 `;
 
-const menuItems = [
-  { id: 0, icon: 'fas fa-home', name: 'Home' },
-  { id: 1, icon: 'fas fa-bars', name: 'Workflow' },
-  { id: 2, icon: 'fas fa-chart-line', name: 'Statistic' },
-  { id: 3, icon: 'far fa-calendar-alt', name: 'Calendar' },
-  { id: 4, icon: 'fas fa-user', name: 'Users' },
-  { id: 5, icon: 'fas fa-cog', name: 'Settings' }
-];
+const LinkTitle = styled.span`
+  color: white;
+`;
 
-{
-  /* <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/topics">Topics</Link></li>
-        </ul> */
-}
+const LinkIcon = styled.i`
+  color: #3669a7;
+  padding-right: 1em;
+`;
+
+const menuItems = [
+  { id: 0, path: '/', icon: 'fas fa-home', name: 'Home' },
+  { id: 1, path: 'Workflow', icon: 'fas fa-bars', name: 'Workflow' },
+  { id: 2, path: 'Statistics', icon: 'fas fa-chart-line', name: 'Statistics' },
+  { id: 3, path: 'Calendar', icon: 'far fa-calendar-alt', name: 'Calendar' },
+  { id: 4, path: 'Users', icon: 'fas fa-user', name: 'Users' },
+  { id: 5, path: 'Settings', icon: 'fas fa-cog', name: 'Settings' }
+];
 
 const Menu = ({ menu, toggleMenu }) => (
   <Wrapper menu={menu}>
     <Logo onClick={toggleMenu} />
     <Ul>
       {menuItems.map(item => (
-        <Li key={item.id}>
-          <i className={item.icon} /> {item.name}
-        </Li>
+        <StyledLink key={item.id} to={item.path}>
+          <Li>
+            <LinkIcon className={item.icon} />
+            <LinkTitle>{item.name}</LinkTitle>
+          </Li>
+        </StyledLink>
       ))}
     </Ul>
   </Wrapper>

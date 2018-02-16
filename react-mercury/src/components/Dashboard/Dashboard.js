@@ -2,20 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Menu from './Menu';
 import Header from './Header';
-// import Content from '../Main/Main';
+import Content from './Content';
 
 const Wrapper = styled.div`
   display: flex;
 `;
 
-const Content = styled.div``;
-
-const Dashboard = ({ toggleMenu, menu }) => {
+const Dashboard = () => {
   return (
     <Wrapper>
-      <Menu menu={menu} toggleMenu={toggleMenu} />
+      <Menu />
       <div>
-        <Header toggleMenu={toggleMenu} />
+        <Header />
         <Content />
       </div>
     </Wrapper>
