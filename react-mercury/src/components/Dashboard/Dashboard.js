@@ -7,6 +7,7 @@ import Header from './Header';
 const Wrapper = styled.div`
   display: flex;
 `;
+
 const Content = styled.div``;
 
 const Dashboard = ({ toggleMenu, menu }) => {
