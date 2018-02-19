@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: calc(100% - 12vh);
+  height: 80%;
 `;
 
 const Title = styled.h2`
@@ -22,10 +22,10 @@ const Status = styled.span`
 
 const Submit = styled.button`
   color: white;
-  width: 15vw;
-  height: 5vh;
+  width: 50%;
+  height: 40px;
   border: none;
-  border-radius: 2.5vh;
+  border-radius: 20px;
   cursor: pointer;
   background: #2b88fe;
   display: flex;
@@ -33,6 +33,14 @@ const Submit = styled.button`
   justify-content: center;
   :hover {
     background: #2b88c1;
+  }
+
+  @media (min-width: 400px) {
+    width: 35%;
+  }
+
+  @media (min-width: 700px) {
+    width: 30%;
   }
 `;
 

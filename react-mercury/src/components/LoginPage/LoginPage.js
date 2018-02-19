@@ -8,15 +8,26 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
   background-image: url(${image});
 `;
 
 const LoginWindow = styled.div`
-  height: 65vh;
-  width: 50vw;
+  height: 80%;
   background: white;
+  width: 95%;
+
+  @media (min-width: 700px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
+
+  @media (min-width: 1300px) {
+    width: 60%;
+  }
 `;
 
 const LoginPage = () => {

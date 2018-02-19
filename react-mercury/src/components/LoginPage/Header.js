@@ -4,24 +4,35 @@ import Logo from '../Logo';
 
 const Wrapper = styled.div`
   color: white;
-  height: 12vh;
   background: #0f2038;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const Button = styled.a`
-  width: 7vw;
-  height: 12vh;
+  min-width: 110px;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1vh solid none;
   :hover {
-    padding-top: 1vh;
-    height: 10vh;
-    border-bottom: 1vh solid #3289fd;
+    padding: 10px 10px 0 10px;
+    border-bottom: 10px solid #3289fd;
+  }
+
+  @media (min-width: 600px) {
+    margin: 1vw;
+    padding: 3vh 6vw;
+    :hover {
+      padding: 3vh 6vw 2vh 6vw;
+    }
   }
 `;
 
