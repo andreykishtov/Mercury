@@ -54,7 +54,13 @@ const Image = styled.img`
   margin-right: 5px;
 `;
 
-const Header = ({ toggleMenu }) => (
+// export interface RouteProps {
+//     children?: (props: { x: number }) => any;
+// }
+// export class MyComponent<T extends RouteProps = RouteProps> extends React.Component<T> { }
+// <MyComponent children={({ x }) => {}}/>
+
+const Header = (props: { toggleMenu: any }) => (
   <Wrapper>
     <Left>
       <MenuActivator onClick={toggleMenu}>
