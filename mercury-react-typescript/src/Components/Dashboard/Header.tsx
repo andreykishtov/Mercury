@@ -86,7 +86,7 @@ const Header = (props: { toggleMenu: any }) => (
   </Wrapper>
 );
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch: Dispatch) => ({
   toggleMenu: () => {
     dispatch(toggleMenu());
   }
